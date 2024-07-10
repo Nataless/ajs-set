@@ -3,7 +3,7 @@ import Team from '../classes/Team';
 test('add a character to the group', () => {
   const team = new Team();
   team.add({
-    name: 'Vasya',
+    name: 'Vlad',
     type: 'Bowman',
     health: 100,
     level: 1,
@@ -12,7 +12,7 @@ test('add a character to the group', () => {
   });
   expect(() => {
     team.add({
-      name: 'Vasya',
+      name: 'Vlad',
       type: 'Bowman',
       health: 100,
       level: 1,
@@ -26,7 +26,7 @@ test('add all characters to the group', () => {
   const team = new Team();
   team.addAll(
     {
-      name: 'Vasya',
+      name: 'Vlad',
       type: 'Bowman',
       health: 100,
       level: 1,
@@ -34,7 +34,7 @@ test('add all characters to the group', () => {
       defence: 25,
     },
     {
-      name: 'Sveta',
+      name: 'Steve',
       type: 'Swordsman',
       health: 100,
       level: 1,
@@ -42,7 +42,7 @@ test('add all characters to the group', () => {
       defence: 10,
     },
     {
-      name: 'Petya',
+      name: 'Peter',
       type: 'Magician',
       health: 100,
       level: 1,
@@ -50,7 +50,7 @@ test('add all characters to the group', () => {
       defence: 40,
     },
     {
-      name: 'Vasya',
+      name: 'Vlad',
       type: 'Bowman',
       health: 100,
       level: 1,
@@ -59,7 +59,7 @@ test('add all characters to the group', () => {
     },
   );
   expect(team.members).toEqual(new Set([{
-    name: 'Vasya',
+    name: 'Vlad',
     type: 'Bowman',
     health: 100,
     level: 1,
@@ -67,7 +67,7 @@ test('add all characters to the group', () => {
     defence: 25,
   },
   {
-    name: 'Sveta',
+    name: 'Steve',
     type: 'Swordsman',
     health: 100,
     level: 1,
@@ -75,7 +75,7 @@ test('add all characters to the group', () => {
     defence: 10,
   },
   {
-    name: 'Petya',
+    name: 'Peter',
     type: 'Magician',
     health: 100,
     level: 1,
@@ -87,7 +87,7 @@ test('add all characters to the group', () => {
 test('convert container Set to array', () => {
   const team = new Team();
   team.add({
-    name: 'Vasya',
+    name: 'Vlad',
     type: 'Bowman',
     health: 100,
     level: 1,
